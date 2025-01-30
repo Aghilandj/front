@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #343a40;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #495057;
+    color: #f8f9fa;
+  }
+  
+  nav a:last-child {
+    background-color: #dc3545;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  nav a:last-child:hover {
+    background-color: #c82333;
+  }
+  
+  body {
+    padding-top: 60px; /* Adjusts body content to avoid overlap with fixed navbar */
+  }
+  
