@@ -1,0 +1,113 @@
+/* Container */
+.orders-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-height: 50vh;
+  }
+  
+  /* Title */
+  .orders-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Order Card */
+  .order {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .order:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Order Details */
+  .order h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .order p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Status Styling */
+  .order-status {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .status-pending {
+    background: #ffcc00;
+    color: #333;
+  }
+  
+  .status-completed {
+    background: #28a745;
+    color: white;
+  }
+  
+  .status-cancelled {
+    background: #dc3545;
+    color: white;
+  }
+  
+  /* Order Items */
+  .order-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  .order-item strong {
+    font-size: 1.1rem;
+  }
+  
+  .order-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Empty Orders */
+  .no-orders {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #777;
+  }
+  
+  /* Loading & Error Messages */
+  .loading, .error-message {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
