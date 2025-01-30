@@ -8,6 +8,7 @@ function Navbar() {
       <Link to="/cart">Cart</Link>
       <Link to="/orders">Orders</Link>
       <Link to="/add-item">Additems</Link>
+      <Link to="/login">Logout</Link>
     </nav>
   );
 }
