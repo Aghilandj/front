@@ -10,10 +10,10 @@ function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    setError(null); 
+    setError(null);
 
     try {
-      const response = await axios.post('http://localhost:3001/api/login', { email, password });
+      const response = await axios.post('https://back-nkyz.onrender.com/api/login', { email, password }); // Updated URL
       const { token, role } = response.data;
 
       localStorage.setItem('authToken', token);

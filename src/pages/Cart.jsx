@@ -17,7 +17,7 @@ const Cart = () => {
         const decodedToken = jwt_decode(token);
         const userId = decodedToken.userId;
 
-        const response = await axios.get(`http://localhost:3001/api/cart/${userId}`, {
+        const response = await axios.get(`https://back-nkyz.onrender.com/api/cart/${userId}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -39,7 +39,7 @@ const Cart = () => {
       const userId = decodedToken.userId;
   
       const response = await axios.delete(
-        `http://localhost:3001/api/cart/remove/${userId}/${itemId}`,
+        `https://back-nkyz.onrender.com/api/cart/remove/${userId}/${itemId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -65,7 +65,7 @@ const Cart = () => {
         const items = cart.items;
 
         await axios.post(
-          'http://localhost:3001/api/orders',
+          'https://back-nkyz.onrender.com/api/orders',
           { userId, items }, 
           { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -81,6 +81,7 @@ const Cart = () => {
 
   if (loading) return <div>Loading cart...</div>;
   if (error) return <div>{error}</div>;
+
   return (
     <div className="cart-container">
       <h1 className="cart-title">Your Cart</h1>
@@ -106,7 +107,7 @@ const Cart = () => {
         <p className="empty-cart">Your cart is empty.</p>
       )}
     </div>
-  );}
-  
+  );
+};
 
 export default Cart;

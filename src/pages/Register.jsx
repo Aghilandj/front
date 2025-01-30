@@ -12,7 +12,7 @@ function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3001/api/users', { email, password, role });
+      await axios.post('https://back-nkyz.onrender.com/api/users', { email, password, role });
       alert('Registration successful');
       navigate('/login');
     } catch (error) {

@@ -28,7 +28,7 @@ const Orders = () => {
 
     const fetchOrders = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/api/orders/${userId}`, {
+        const response = await axios.get(`https://back-nkyz.onrender.com/api/orders/${userId}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setOrders(response.data.orders);

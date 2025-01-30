@@ -3,8 +3,7 @@ import axios from 'axios';
 import jwt_decode from 'jwt-decode';
 import './Items.css';
 
-
-const API_URL = 'http://localhost:3001';
+const API_URL = 'https://back-nkyz.onrender.com'; // Updated URL
 
 function Items() {
   const [items, setItems] = useState([]);
@@ -76,6 +75,7 @@ function Items() {
       <div className="text-xl text-red-500">{error}</div>
     </div>
   );
+
   return (
     <div className="items-container">
       <h1 className="items-title">Available Items</h1>
@@ -108,7 +108,6 @@ function Items() {
       )}
     </div>
   );
-  
 }
 
 export default Items;

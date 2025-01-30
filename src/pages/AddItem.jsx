@@ -20,7 +20,7 @@ function AddItem() {
     }
 
     try {
-      await axios.post('http://localhost:3001/api/items', {
+      await axios.post('https://back-nkyz.onrender.com/api/items', {
         name,
         description,
         photoURL,
