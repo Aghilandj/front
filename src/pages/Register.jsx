@@ -23,7 +23,7 @@ function Register() {
 
   return (
     <div>
-      <h2>Register</h2>
+      <h2 className='head'>Register</h2>
       <form onSubmit={handleRegister}>
         <input
           type="email"
@@ -45,8 +45,10 @@ function Register() {
         </select>
         <button type="submit">Register</button>
       </form>
+      <div className='loin'>
       <p>Already signed up?</p>
-      <button onClick={() => navigate('/login')}>Login</button>
+      <button className="loginb" onClick={() => navigate('/login')}>Login</button>
+      </div>
     </div>
   );
 }

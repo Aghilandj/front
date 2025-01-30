@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './Login.css';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -33,7 +34,7 @@ function Login() {
 
   return (
     <div>
-      <h2>Login</h2>
+      <h2 className='head'>Login</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form onSubmit={handleLogin}>
         <input
@@ -52,8 +53,10 @@ function Login() {
         />
         <button type="submit">Login</button>
       </form>
+      <div className='loin'>
       <p>Don't have an account?</p>
-      <button onClick={() => navigate('/register')}>Register</button>
+      <button className='loginb' onClick={() => navigate('/register')}>Register</button>
+      </div>
     </div>
   );
 }
